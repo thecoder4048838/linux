@@ -2,16 +2,16 @@ import os
 import subprocess
 import shutil
 
-CRD_SSH_Code = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code=\"4/0AcvDMrA4MCxG_FROC8ITSEAcitYPRhm03Vvmkq1S9k1vdpwctbulUHFOzqovL3vTlH5DGg\" --redirect-url=\"https://remotedesktop.google.com/_/oauthredirect\" --name=$(hostname)"
-username = "user"  # @param {type:"string"}
-password = "root"  # @param {type:"string"}
+CRD_SSH_Code = input("Google CRD SSH Code :")
+username = "user" #@param {type:"string"}
+password = "root" #@param {type:"string"}
 os.system(f"useradd -m {username}")
 os.system(f"adduser {username} sudo")
 os.system(f"echo '{username}:{password}' | sudo chpasswd")
 os.system("sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd")
 
-Pin = 123456  # @param {type: "integer"}
-Autostart = True  # @param {type: "boolean"}
+Pin = 123456 #@param {type: "integer"}
+Autostart = True #@param {type: "boolean"}
 
 class CRDSetup:
     def __init__(self, user):
@@ -74,6 +74,8 @@ class CRDSetup:
             os.makedirs(f"/home/{user}/.config/autostart", exist_ok=True)
             link = "www.youtube.com/@The_Disala"
             colab_autostart = """[Desktop Entry]
+            print("Finalizing !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+
 Type=Application
 Name=Colab
 Exec=sh -c "sensible-browser {}"
@@ -84,12 +86,12 @@ X-GNOME-Autostart-enabled=true""".format(link)
                 f.write(colab_autostart)
             os.system(f"chmod +x /home/{user}/.config/autostart/colab.desktop")
             os.system(f"chown {user}:{user} /home/{user}/.config")
-
+            
         os.system(f"adduser {user} chrome-remote-desktop")
         command = f"{CRD_SSH_Code} --pin={Pin}"
         os.system(f"su - {user} -c '{command}'")
         os.system("service chrome-remote-desktop start")
-
+        
         print("Log in PIN : 123456") 
         print("User Name : user") 
         print("User Pass : root") 
@@ -97,7 +99,9 @@ X-GNOME-Autostart-enabled=true""".format(link)
             pass
 
 try:
-    if len(str(Pin)) < 6:
+    if CRD_SSH_Code == "":
+        print("Please enter authcode from the given link")
+    elif len(str(Pin)) < 6:
         print("Enter a pin more or equal to 6 digits")
     else:
         CRDSetup(username)
