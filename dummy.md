@@ -2,18 +2,14 @@
 
 **Designed and Developed by One Developer**
 
-*   **Website:** [https://promptarena.vercel.app/](https://promptarena.vercel.app/)
+*   **Website:** [https://promptarena.vercel.app](https://promptarena.vercel.app/)
 *   **Developer:** MaThanMiThun - Full Stack Developer | AI Enthusiast 🧙‍♂️
-*   **GitHub:** [https://github.com/yourusername](https://github.com/yourusername)
-*   **Contact:** [your.email@example.com](mailto:your.email@example.com)
+*   **GitHub:** [https://github.com/MaThanMiThun1999](https://github.com/MaThanMiThun1999)
+*   **Contact:** [themathanrajmurugesan@gmail.com](mailto:themathanrajmurugesan@gmail.com)
 ---
 
 ### 🎬 **Interactive Preview:**
-
-**(GIF Placeholder - Replace this with a GIF of the platform in action)**  
-![PromptArena GIF](https://via.placeholder.com/800x400/000000/FFFFFF/?text=Insert+GIF+Here)  
-*This GIF demonstrates a typical user flow on PromptArena, showcasing key features and functionality.*
-
+![PromptArena GIF](https://mathanmithun.neocities.org/PromptArena/promptarena-git-low.gif)  
 ---
 
 ### 🎯 **Executive Summary**
