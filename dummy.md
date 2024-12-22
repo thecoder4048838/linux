@@ -42,7 +42,44 @@ PromptArena is a cutting-edge platform providing free access to **AI-generated p
 *   **Authentication**: Google Auth, JWT 🔐
 *   **Analytics**: Google Analytics 📊
 
-![Architecture Diagram](https://via.placeholder.com/800x400 "Platform Architecture") *(Placeholder Diagram - Insert your Diagram here)*
+# Architecture Diagram - PromptArena
+
+                                    +-----------------------------+
+                                    |          Frontend           |
+                                    |       (React.js, PWA)       |
+                                    +-----------------------------+
+                                               |
+                                               |
+                    +--------------------------v-------------------------+
+                    |                        APIs                        |
+                    |    +-------------------------------------------+    |
+                    |    |                    Backend                |    |
+                    |    |  (Node.js, Express.js, Google Analytics) |    |
+                    |    +-------------------------------------------+    |
+                    |                        Middleware                   |
+                    |    +-------------------------------------------+    |
+                    |                  Authentication                    |
+                    |    +-------------------------------------------+    |
+                    +--------------------------^------------------------+
+                                               |
+                    +--------------------------v-------------------------+
+                    |         MongoDB (NoSQL Database)                   |
+                    |  +-----------------------------------------------+  |
+                    |  | Users, Prompts, Images, Reviews, Contact,    |  |
+                    |  | and Newsletter                               |  |
+                    |  +-----------------------------------------------+  |
+                    +--------------------------+------------------------+
+                                               |
+                    +--------------------------v-------------------------+
+                    |                     Cloudinary                    |
+                    |                  (Media Storage)                   |
+                    +--------------------------------------------------+
+                                               |
+                    +--------------------------v-------------------------+
+                    |                  Google Analytics                  |
+                    |               (Events/Logs Tracking)              |
+                    +--------------------------------------------------+
+
 
 ---
 
