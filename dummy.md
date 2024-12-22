@@ -84,13 +84,11 @@ PromptArena is a cutting-edge platform providing free access to **AI-generated p
 
 ### 🖼️ **A Glimpse into PromptArena:**
 
-(Placeholders - Replace with actual screenshots)
-
 #### 🏠 **Home Page - The Portal to Possibilities**
-![Home Page Screenshot](https://via.placeholder.com/600x300 "Home Page") *(Placeholder Image)*
+![Home Page Screenshot](https://mathanmithun.neocities.org/PromptArena/promptarena-home.webp "Home Page")
 
 #### 🔍 **Search Interface - Precision Discovery**
-![Search Screenshot](https://via.placeholder.com/600x300 "Search Interface") *(Placeholder Image)*
+![Search Screenshot](https://mathanmithun.neocities.org/PromptArena/promptarena-explore.webp "Search Interface")
 
 #### 📋 **Prompt Details - Everything You Need to Know**
 ![Prompt Details Screenshot](https://via.placeholder.com/600x300 "Prompt Details") *(Placeholder Image)*
