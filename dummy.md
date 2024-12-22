@@ -94,10 +94,10 @@ PromptArena is a cutting-edge platform providing free access to **AI-generated p
 ![Prompt Details Screenshot](https://mathanmithun.neocities.org/PromptArena/promptarena-prompt-details-2.webp "Prompt Details")
 
 #### 🛠️ **Admin Dashboard - Command Center**
-![Admin Dashboard Screenshot](https://mathanmithun.neocities.org/PromptArena/promptarena-admin.webp "Admin Dashboard") *(Placeholder Image)*
+![Admin Dashboard Screenshot](https://mathanmithun.neocities.org/PromptArena/promptarena-admin.webp "Admin Dashboard")
 
 #### 📱 **Mobile View - Optimized On-the-Go**
-![Mobile View Screenshot](https://via.placeholder.com/600x300 "Mobile View") *(Placeholder Image)*
+![Mobile View Screenshot](https://mathanmithun.neocities.org/PromptArena/promptarena-mobile.webp "Mobile View")
 
 ---
 
